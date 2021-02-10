@@ -1,0 +1,21 @@
+img {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+}
+
+//*******Colores*******
+$color1: rgb(0, 179, 250);
+$color2: rgb(1, 238, 255);
+$list: $color1,
+$color2;
+//*********header*** 
+@mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+}
+
+.b {
+    @include gradient(right, $list);
+    height: 80px;
+    width: 100%;
+}

@@ -1,21 +1,22 @@
-<ion-header [translucent]="true">
-    <ion-toolbar>
-        <ion-title>
-            Inventario
-        </ion-title>
-    </ion-toolbar>
-</ion-header>
+<app-navbar></app-navbar>
 
 <ion-content [fullscreen]="true">
+
+    <br>
     <ion-list>
         <ion-list-header>
             <ion-label>Producto</ion-label>
             <ion-label>Stock</ion-label>
+            <ion-label>Editar</ion-label>
         </ion-list-header>
 
         <ion-item>
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-label>Pokémon Yellow</ion-label>
+            <ion-label>Jabon</ion-label>
+            <ion-label>500</ion-label>
+            <ion-label class="ion-text-center">
+                <ion-button color="success" shape="round" (click)="Alert()"><i class="fas fa-pencil-alt"></i></ion-button>
+            </ion-label>
+
         </ion-item>
     </ion-list>
 </ion-content>
